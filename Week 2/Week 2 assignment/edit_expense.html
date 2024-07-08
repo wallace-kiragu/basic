@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Expense</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Expense</h1>
+    </header>
+    <main>
+        <form action="edit_expense_process.php" method="post">
+            <input type="hidden" name="expense_id" value="<!-- Expense ID here -->">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="<!-- Current date here -->" required>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" value="<!-- Current amount here -->" required>
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" value="<!-- Current category here -->" required>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" value="<!-- Current description here -->">
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+</body>
+</html>
